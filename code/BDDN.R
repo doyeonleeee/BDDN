@@ -127,7 +127,6 @@ dn_long1 = as.data.frame(t(dn_matrix[cluster1_data, ])) %>%
   pivot_longer(cols = -Time, names_to = "Protein", values_to = "DN_Value")
 dn_long1$Time = as.numeric(gsub("[hr,min]","", dn_long1$Time))
 
-
 # cluster 2
 cluster2_data = which(kmeans_result2$cluster == 2)
 dn_long2 = as.data.frame(t(dn_matrix[cluster2_data, ])) %>%
