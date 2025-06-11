@@ -13,7 +13,7 @@ niter = dim(A.psamp2)[3]
 n_time_points = nrow(unique(x2))
 
 
-## Psi inverse (dim: p,p,niter)
+## Psi inverse
 psi_inv_arr = array(NA, dim = c(p, p, niter))
 for(i in 1:niter){
   psi_inv_arr[,,i] = solve(A.psamp2[,,i])
