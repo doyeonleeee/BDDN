@@ -10,6 +10,7 @@ using namespace std;
 
 // [[Rcpp::depends("RcppArmadillo")]]
 // [[Rcpp::export]]
+// Function to print dimension
 void printDimensions_cub(cube a) {
   Rcout << "cubDimensions: " << a.n_rows << " " << a.n_cols << " " << a.n_slices << std::endl;
 }
